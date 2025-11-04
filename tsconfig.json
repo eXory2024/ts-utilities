@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "allowArbitraryExtensions": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "skipLibCheck": false,
+    "lib": [
+      "esnext"
+    ],
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "outDir": "./dist/",
+    "rootDir": "./project/",
+    "declaration": true,
+    "emitDeclarationOnly": true
+  },
+  "include": [
+    "./project/export/**/*",
+    "./project/src/**/*",
+  ]
+}

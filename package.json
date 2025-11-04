@@ -1,0 +1,15 @@
+{
+  "name": "@exory2024/ts-utilities",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./dist/export/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
