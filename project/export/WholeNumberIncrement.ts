@@ -5,4 +5,4 @@ export type WholeNumberIncrement<
 > = [
 	...TupleOf<unknown, N>,
 	unknown
-]["length"]
+] extends readonly [...infer Elements] ? Elements["length"] : never
