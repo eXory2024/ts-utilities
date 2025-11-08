@@ -1,4 +1,4 @@
-type PopTupleImplementation<
+type TuplePopImplementation<
 	T extends readonly unknown[],
 	N extends number,
 	Acc extends readonly unknown[]
@@ -10,11 +10,11 @@ type PopTupleImplementation<
 		// Pop element
 		T extends [...infer Rest, infer End] ?
 			// Recurse
-			PopTupleImplementation<Rest, N, [...Acc, End]> :
+			TuplePopImplementation<Rest, N, [...Acc, End]> :
 			// Nothing more to pop off
 			never
 
-export type PopTuple<
+export type TuplePop<
 	T extends readonly unknown[],
 	N extends number = 1
-> = PopTupleImplementation<T, N, []>
+> = TuplePopImplementation<T, N, []>
