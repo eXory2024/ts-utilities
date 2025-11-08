@@ -2,6 +2,7 @@
 export type {DropTupleElementsLeft} from "./DropTupleElementsLeft.ts"
 export type {DropTupleElementsRight} from "./DropTupleElementsRight.ts"
 export type {Flatten} from "./Flatten.ts"
+export type {FlattenDeep} from "./FlattenDeep.ts"
 export type {Literal} from "./Literal.ts"
 export type {MapValueType} from "./MapValueType.ts"
 export type {OmitProperties} from "./OmitProperties.ts"
