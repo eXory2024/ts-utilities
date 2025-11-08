@@ -1,10 +1,10 @@
-type FlattenImplementation<
+type TupleFlattenImplementation<
 	Input extends readonly unknown[],
 	Result extends readonly unknown[]
 > =
 	Input extends [infer First, ...infer Rest] ?
 		// Handle first element
-		FlattenImplementation<
+		TupleFlattenImplementation<
 			Rest,
 			First extends readonly unknown[] ? [
 				...Result,
@@ -18,6 +18,6 @@ type FlattenImplementation<
 		// No more elements to remove, return result
 		Result
 
-export type Flatten<
+export type TupleFlatten<
 	T extends readonly unknown[]
-> = FlattenImplementation<T, []>
+> = TupleFlattenImplementation<T, []>
