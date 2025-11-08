@@ -1,4 +1,4 @@
-type DropTupleElementsLeftImplementation<
+type TupleDropElementsLeftImplementation<
 	T extends readonly unknown[],
 	N extends number,
 	Counter extends readonly unknown[]
@@ -10,7 +10,7 @@ type DropTupleElementsLeftImplementation<
 		// Remove first element
 		T extends [infer Start, ...infer Rest] ?
 			// Recurse
-			DropTupleElementsLeftImplementation<
+			TupleDropElementsLeftImplementation<
 				Rest,
 				N,
 				[...Counter, unknown]
@@ -18,7 +18,7 @@ type DropTupleElementsLeftImplementation<
 			// Nothing more to remove
 			never
 
-export type DropTupleElementsLeft<
+export type TupleDropElementsLeft<
 	T extends readonly unknown[],
 	N extends number = 1
-> = DropTupleElementsLeftImplementation<T, N, []>
+> = TupleDropElementsLeftImplementation<T, N, []>

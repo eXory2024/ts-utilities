@@ -3,7 +3,7 @@ import type {TuplePyramid} from "../src/TuplePyramid.ts"
 import type {WholeNumberIncrement} from "./WholeNumberIncrement.ts"
 import type {TupleToUnion} from "./TupleToUnion.ts"
 import type {TupleOf} from "./TupleOf.ts"
-import type {DropTupleElementsLeft} from "./DropTupleElementsLeft.ts"
+import type {TupleDropElementsLeft} from "./TupleDropElementsLeft.ts"
 
 export type TupleOfMinMax<
 	T,
@@ -15,7 +15,7 @@ export type TupleOfMinMax<
 		OnlyLiteral<Max> extends number ? (
 			// Max is set
 			TupleToUnion<
-				DropTupleElementsLeft<
+				TupleDropElementsLeft<
 					TuplePyramid<T, WholeNumberIncrement<OnlyLiteral<Max>>>, OnlyLiteral<Min>
 				>
 			>
