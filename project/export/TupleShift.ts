@@ -1,4 +1,4 @@
-type ShiftTupleImplementation<
+type TupleShiftImplementation<
 	T extends readonly unknown[],
 	N extends number,
 	Result extends readonly unknown[]
@@ -10,12 +10,12 @@ type ShiftTupleImplementation<
 		// Remove first element
 		T extends [infer Start, ...infer Rest] ?
 			// Recurse
-			ShiftTupleImplementation<
+			TupleShiftImplementation<
 				Rest, N, [...Result, Start]
 			> :
 			never
 
-export type ShiftTuple<
+export type TupleShift<
 	T extends readonly unknown[],
 	N extends number = 1
-> = ShiftTupleImplementation<T, N, []>
+> = TupleShiftImplementation<T, N, []>
