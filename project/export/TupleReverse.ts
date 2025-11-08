@@ -1,4 +1,4 @@
-type ReverseTupleImplementation<
+type TupleReverseImplementation<
 	T extends readonly unknown[],
 	TLength extends number,
 	Result extends readonly unknown[]
@@ -10,13 +10,13 @@ type ReverseTupleImplementation<
 		// Remove first element
 		T extends [infer Start, ...infer Rest] ?
 			// Recurse
-			ReverseTupleImplementation<
+			TupleReverseImplementation<
 				Rest, TLength, [Start, ...Result]
 			> :
 			never
 
-export type ReverseTuple<
+export type TupleReverse<
 	T extends readonly unknown[]
-> = ReverseTupleImplementation<
+> = TupleReverseImplementation<
 	T, T["length"], []
 >
