@@ -5,7 +5,7 @@
   "description": "",
   "main": "./dist/export/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "./build.sh"
   },
   "author": "",
   "license": "MIT",
