@@ -2,7 +2,7 @@
   "name": "@exory2024/ts-utilities",
   "type": "module",
   "version": "0.0.0",
-  "description": "",
+  "description": "TypeScript type utilities.",
   "exports": {
     ".": {
       "types": "./dist/export/index.d.ts",
