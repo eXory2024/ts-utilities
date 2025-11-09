@@ -11,5 +11,9 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eXory2024/ts-utilities.git"
   }
 }
