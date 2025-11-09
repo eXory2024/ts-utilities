@@ -7,7 +7,7 @@
   "scripts": {
     "prepare": "./build.sh"
   },
-  "author": "",
+  "author": "eXory2024 <exory@anio.software>",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.9.3"
