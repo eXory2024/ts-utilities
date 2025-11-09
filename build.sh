@@ -6,3 +6,5 @@ mkdir dist/
 node buildIndex.mjs
 
 ./node_modules/.bin/tsc
+
+touch dist/export/index.js
