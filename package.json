@@ -15,5 +15,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eXory2024/ts-utilities.git"
-  }
+  },
+  "files": [
+     "./dist/",
+     "./package.json"
+  ]
 }
