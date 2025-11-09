@@ -5,7 +5,7 @@
   "description": "",
   "main": "./dist/export/index.d.ts",
   "scripts": {
-    "prepare": "./build.sh"
+    "build": "./build.sh"
   },
   "author": "eXory2024 <exory@anio.software>",
   "license": "MIT",
