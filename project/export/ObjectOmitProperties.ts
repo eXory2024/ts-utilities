@@ -1,4 +1,4 @@
-export type OmitProperties<
+export type ObjectOmitProperties<
 	T extends object,
 	OmittedProperties extends string
 > = T extends T ? {
