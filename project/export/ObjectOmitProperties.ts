@@ -1,6 +1,6 @@
 export type ObjectOmitProperties<
 	T extends object,
-	OmittedProperties extends string
+	Properties extends string
 > = T extends T ? {
-	[K in keyof T as K extends OmittedProperties ? never : K]: T[K]
+	[K in keyof T as K extends Properties ? never : K]: T[K]
 } : never
